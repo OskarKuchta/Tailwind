@@ -1,2 +1,2 @@
 # Tailwind
-LearnTailwind
+Learn Tailwind CSS 
