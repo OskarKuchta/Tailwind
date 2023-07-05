@@ -26,14 +26,15 @@ const Photos: React.FC = () => {
   return (
     <div className="w-1/3 sm:w-1/4 md:w-1/5">
       <figure>
-      <img
-        className="w-full rounded-full aspect-square transition-all duration-1000 hover:scale-110 hover:rotate-180"
-        src={photo}
-        alt="Random image"
-      />
-      <figcaption className="mt-4 text-[#5c3de6]">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt assumenda nobis, repellendus
-      </figcaption>
+        <img
+          className="w-full rounded-full aspect-square transition-all duration-1000 hover:scale-110 hover:rotate-180"
+          src={photo}
+          alt="Random image"
+        />
+        <figcaption className="mt-4 text-[#65c439] text-xs sm:text-base sm:text-[#3d0ebc]">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+          assumenda nobis, repellendus
+        </figcaption>
       </figure>
     </div>
   );
