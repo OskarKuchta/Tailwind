@@ -24,9 +24,9 @@ const Photos: React.FC = () => {
   }, [counter]);
 
   return (
-    <div className="w-1/2 sm:w-1/3 md:w-1/5 overflow-hidden">
+    <div className="w-1/3 sm:w-1/4 md:w-1/5">
       <img
-        className="w-full rounded-full aspect-square"
+        className="w-full rounded-full aspect-square transition-transform duration-1000 hover:scale-105"
         src={photo}
         alt="Random image"
       />

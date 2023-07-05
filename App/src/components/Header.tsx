@@ -1,7 +1,11 @@
 import React from "react";
 
 const Header: React.FC = () => {
-  return <div className=" text-red-300 py-10">Hello Tailwind</div>;
+  return (
+    <div className="py-10">
+      <h1 className="text-headerText-300">Hello Tailwind</h1>
+    </div>
+  );
 };
 
 export default Header;
