@@ -3,7 +3,7 @@ import Photos from "./components/Photos";
 
 const App: React.FC = () => {
   return (
-    <main className="w-screen h-screen flex flex-col items-center bg-bodybg">
+    <main className="flex flex-col items-center">
       <Header />
       <Photos />
     </main>

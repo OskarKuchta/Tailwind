@@ -24,19 +24,19 @@ const Photos: React.FC = () => {
   }, [counter]);
 
   return (
-    <div className="w-1/3 sm:w-1/4 md:w-1/5">
+    <section className="w-1/3 sm:w-1/4 md:w-1/5">
       <figure>
         <img
           className="w-full rounded-full aspect-square transition-all duration-1000 hover:scale-110 hover:rotate-180"
           src={photo}
           alt="Random image"
         />
-        <figcaption className="mt-4 text-[#65c439] text-xs sm:text-base sm:text-[#3d0ebc]">
+        <figcaption className="mt-4 text-[#65c439] text-xs sm:text-base sm:text-[#3d0ebc] underline decoration-white decoration-dotted">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
           assumenda nobis, repellendus
         </figcaption>
       </figure>
-    </div>
+    </section>
   );
 };
 

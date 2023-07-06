@@ -11,6 +11,24 @@ export default {
       xl: "1440px"   // (max-width: 1440px)
 
     },
+    extend: {
+      fontSize: {
+        xs: "0.5rem",
+        sm: "0.75rem",
+        base: "1rem",
+        lg: "1.25rem",
+        xl: "1.5rem",
+
+      },
+      colors: {
+        bodybg: "#9CAFB7",
+        headerText: {
+          100: "#EB3624",
+          200: "#EB2114",
+          300: "#EA1116"
+        }
+      }
+    },
     spacing: {
       "1": "0.25rem",
       "2": "0.5rem",
@@ -24,16 +42,6 @@ export default {
       "10": "2.5rem",
       "11": "2.75rem",
       "12": "3rem",
-    },
-    extend: {
-      colors: {
-        bodybg: "#9CAFB7",
-        headerText: {
-          100: "#EB3624",
-          200: "#EB2114",
-          300: "#EA1116"
-        }
-      }
     },
   },
   plugins: [],
