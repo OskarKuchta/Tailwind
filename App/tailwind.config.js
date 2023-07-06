@@ -21,11 +21,11 @@ export default {
 
       },
       colors: {
-        bodybg: "#9CAFB7",
+        bodybg: "#C2FFFF",
         headerText: {
-          100: "#EB3624",
-          200: "#EB2114",
-          300: "#EA1116"
+          100: "#890505",
+          200: "#672525",
+          300: "#533C3Cs"
         }
       }
     },

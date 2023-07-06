@@ -6,6 +6,7 @@
 @layer base {
   body {
     @apply bg-bodybg;
+    @apply text-xl;
     min-width: 100vw;
     min-height: 100vh;
     font-family: "Playfair Display", serif;

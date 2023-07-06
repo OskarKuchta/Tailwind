@@ -31,7 +31,11 @@ const Photos: React.FC = () => {
           src={photo}
           alt="Random image"
         />
-        <figcaption className="mt-4 text-[#65c439] text-xs sm:text-base sm:text-[#3d0ebc] underline decoration-white decoration-dotted">
+        <figcaption
+          className="mt-4 text-[#] text-base sm:text-lg
+         sm:text-[#09021D] underline
+           decoration-dotted decoration-red-500"
+        >
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
           assumenda nobis, repellendus
         </figcaption>
