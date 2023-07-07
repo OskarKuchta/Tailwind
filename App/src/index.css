@@ -13,3 +13,14 @@
     font-weight: 600;
   }
 }
+@layer components {
+  #root {
+    @apply flex;
+    @apply flex-col;
+    @apply w-3/4;
+    @apply mx-auto;
+  }
+  .ordered-list {
+    list-style-type: upper-alpha;
+  }
+}

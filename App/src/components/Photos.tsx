@@ -24,7 +24,7 @@ const Photos: React.FC = () => {
   }, [counter]);
 
   return (
-    <section className="w-1/3 sm:w-1/4 md:w-1/5">
+    <section>
       <figure>
         <img
           className="w-full rounded-full aspect-square transition-all duration-1000 hover:scale-110 hover:rotate-180"
