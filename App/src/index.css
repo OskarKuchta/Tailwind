@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @layer base {
   body {
     @apply bg-bodybg;
@@ -19,8 +25,5 @@
     @apply flex-col;
     @apply w-3/4;
     @apply mx-auto;
-  }
-  .ordered-list {
-    list-style-type: upper-alpha;
   }
 }
