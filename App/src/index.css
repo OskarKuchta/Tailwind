@@ -20,9 +20,19 @@
   }
 }
 @layer components {
-  #root {
-    @apply flex;
-    @apply flex-col;
-    @apply mx-auto;
+  footer {
+    bottom: 0;
+  }
+  .footer-text {
+    color: white;
+    transition: color 0.4s ease-in-out;
+  }
+
+  .footer-text:hover {
+    background-image: linear-gradient(to right, #2e5fcf, #9a09a1, #be2424);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
