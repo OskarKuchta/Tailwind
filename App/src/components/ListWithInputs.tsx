@@ -26,7 +26,7 @@ const ListWithInputs: React.FC = () => {
     setList(updatedList);
   };
   return (
-    <section className="my-10 flex flex-col">
+    <section className="my-10 flex flex-col w-full">
       <ul className="ordered-list">
         {list.map((item, index) => (
           <li key={index} className="text-[#445dd8]">

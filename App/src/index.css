@@ -23,7 +23,6 @@
   #root {
     @apply flex;
     @apply flex-col;
-    @apply w-3/4;
     @apply mx-auto;
   }
 }

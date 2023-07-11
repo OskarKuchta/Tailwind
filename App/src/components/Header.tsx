@@ -2,7 +2,7 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <section className="py-4 flex items-center">
+    <section className="py-4 flex items-center text-center w-full">
       <h1 className="text-headerText-100 italic uppercase mr-5">
         Hello Tailwind
       </h1>
