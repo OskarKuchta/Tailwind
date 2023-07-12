@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const ListWithInputs: React.FC = () => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState<string>("");
   const ul: string[] = [
     "some values",
     "to create",
@@ -38,7 +38,7 @@ const ListWithInputs: React.FC = () => {
         id="list-item"
         value={value}
         type="text"
-        className="placeholder-[#445dd8] text-[#445dd8]"
+        className={`placeholder-[#445dd8] text-[#445dd8] outline-[#445dd8]  value === "" ? "" : pl-2`}
         placeholder="Type someone"
         onChange={grabItem}
       />
