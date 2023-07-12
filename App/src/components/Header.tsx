@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       {windowWidth > 768 && (
         <a
           href="#footer"
-          className="my-3 md:my-5 border-2 p-3 px-8 lg:px-12 rounded border-blue-700 outline-blue-700 hover:scale-105 focus:scale-105"
+          className="my-3 md:my-5 border-2 p-3 px-8 lg:px-12 rounded border-blue-700 outline-blue-700 hover:scale-105 focus:scale-110"
         >
           Check footer
         </a>

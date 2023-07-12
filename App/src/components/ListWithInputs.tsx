@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 const ListWithInputs: React.FC = () => {
-  const [value, setValue] = useState<string>("");
   const ul: string[] = [
-    "some values",
-    "to create",
-    "a unordered",
-    "list to test",
-    "and repeat knowledge",
+    "Some values",
+    "To create",
+    "A unordered",
+    "List to test",
+    "And repeat knowledge",
   ];
-  const [list, setList] = useState<string[]>(ul);
+
+  const [value, setValue] = useState<string>("");
+  const storedList: string | undefined = Cookies.get("ulList");
+  const initialList: any = storedList ? JSON.parse(storedList) : [];
+
+  const [list, setList] = useState<string[]>(initialList);
+
+  useEffect(() => {
+    Cookies.set("ulList", JSON.stringify(list));
+  }, [list]);
+
   const grabItem = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
   };
@@ -17,13 +27,19 @@ const ListWithInputs: React.FC = () => {
     if (value.trim() === "") {
       return;
     }
-    setList((prev) => [...prev, value]);
+    setList((prev) => [
+      ...prev,
+      value.slice(0, 1).toUpperCase() + value.slice(1),
+    ]);
     setValue("");
   };
   const removeItem: () => void = () => {
     const updatedList = [...list];
     updatedList.pop();
     setList(updatedList);
+  };
+  const reset: () => void = () => {
+    setList(ul);
   };
   return (
     <section className="my-10 flex flex-col w-full">
@@ -38,7 +54,7 @@ const ListWithInputs: React.FC = () => {
         id="list-item"
         value={value}
         type="text"
-        className={`placeholder-[#445dd8] text-[#445dd8] outline-[#445dd8]  value === "" ? "" : pl-2`}
+        className="pl-2 placeholder-[#445dd8] placeholder-opacity-70 text-[#445dd8] outline-[#445dd8]"
         placeholder="Type someone"
         onChange={grabItem}
       />
@@ -56,6 +72,12 @@ const ListWithInputs: React.FC = () => {
           Remove
         </button>
       </div>
+      <button
+        className="mt-8 py-3 px-3 lg:px-7 rounded bg-blue-950 focus:scale-110 outline-blue-950"
+        onClick={reset}
+      >
+        Reset list
+      </button>
     </section>
   );
 };
